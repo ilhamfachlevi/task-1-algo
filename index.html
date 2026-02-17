@@ -2,66 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Muhammad Ilham Fachlevi | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f77600b8df.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class="header_left">
-            <h1>Muhammad Ilham Fachlevi</h1>
-            <div class="bio">
-                <p>Professional Business Analyst</p>
-                <p>I am a professional Business Analyst with a strong focus on bridging business needs and technical solutions. I work closely with stakeholders to understand objectives, analyze processes, and translate complex requirements into clear, actionable insights. With a structured and data-driven approach, I help organizations make informed decisions and deliver measurable business value.</p>
+
+<header>
+    <div class="overlay"></div>
+
+    <div class="header_content">
+        
+        <!-- <div class="profile_image">
+            <img src="fotoku.JPG" alt="Muhammad Ilham Fachlevi" height="250px" width="150px">
+        </div> -->
+
+        <h1>Muhammad Ilham Fachlevi</h1>
+        <h2>Professional Business Analyst</h2>
+        <p>
+            I bridge business needs and technical solutions through structured analysis 
+            and data-driven insights. I collaborate with stakeholders to transform 
+            complex requirements into measurable business value.
+        </p>
+
+        <div class="header_buttons">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="scroll_icon">
+        <i class="fa-solid fa-chevron-down"></i>
+    </div>
+</header>
+
+<main>
+
+    <!-- Skills -->
+    <section class="skills">
+        <h1>Skills</h1>
+
+        <div class="section_row">
+            <div class="card">
+                <img src="html_logo.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+
+            <div class="card">
+                <img src="css_logo.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+
+            <div class="card">
+                <img src="js_logo.png" alt="JavaScript">
+                <p>JavaScript</p>
             </div>
         </div>
-        <div class="header_right">
-            <div class="header_btn">
-                <i class="fa-solid fa-chevron-down"></i>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <h1>Projects</h1>
+
+        <div class="section_row">
+            <div class="card dark">
+                <a href="https://github.com/ilhamfachlevi/" target="_blank">
+                    <img src="github_logo.png" alt="GitHub">
+                    <p>GitHub Portfolio</p>
+                </a>
             </div>
         </div>
-    </header>
-    <main>
-        <section class="skills">
-            <h1>Skills</h1>
-            <div class="section_row">
-                <div class="section_item">
-                    <img src="html_logo.png" alt="">
-                </div>
-                <div class="section_item">
-                    <img src="css_logo.png" alt="">
-                </div>
-                <div class="section_item">
-                    <img src="js_logo.png" alt="">
-                </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h1>Contact</h1>
+    
+        <div class="section_row">
+            <div class="card">
+                <a href="mailto:ilhamfachlevi@gmail.com" class="contact_link">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>ilhamfachlevii@gmail.com</p>
+                </a>
             </div>
-        </section>
-        <section class="projects">
-            <h1>Projects</h1>
-            <div class="section_row">
-                <div class="section_item github">
-                    <a href="https://github.com/ilhamfachlevi/">
-                        <img src="github_logo.png" alt="">
-                    </a>
-                </div>
+    
+            <div class="card">
+                <a href="https://www.linkedin.com/in/milhamfachlevi/" 
+                   target="_blank" 
+                   class="contact_link">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <p>LinkedIn</p>
+                </a>   
             </div>
-        </section>
-        <section class="contacts">
-            <h1>Contacts</h1>
-            <div class="section_row">
-                <div class="section_item">
-                    <img src="tg_logo.svg" alt="">
-                </div>
-                <div class="section_item">
-                    <img src="email_logo.png" alt="">
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer_content">
-            Created by me in 2023 | Algorithmics
         </div>
-    </footer>
+    </section>
+    
+
+</main>
+
+<footer>
+    <p>© 2026 Muhammad Ilham Fachlevi | Built with ❤️</p>
+</footer>
+
 </body>
 </html>
