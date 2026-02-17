@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -15,8 +16,28 @@ header {
     width: 100%;
     height: 100vh;
     background: linear-gradient(135deg, #14532d, #0f3d2e);
-    display: flex;
+=======
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
 
 .header_left {
     width: 65%;
@@ -68,11 +89,96 @@ section {
 section h2 {
     font-size: 2.5em;
     margin-bottom: 40px;
+=======
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
 }
+
+.header_content {
+    position: relative;
+    max-width: 800px;
+    padding: 20px;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header h2 {
+    margin: 10px 0;
+    font-weight: 400;
+    color: #f8f8f8;
+}
+
+header p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.header_buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+
+.primary {
+    background: white;
+    color: #764ba2;
+    font-weight: 600;
+}
+
+.secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+.scroll_icon {
+    position: absolute;
+    bottom: 30px;
+    font-size: 1.5rem;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
+/* ================= SECTIONS ================= */
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+
+}
+
+/* ================= CARDS ================= */
 
 .section_row {
     display: flex;
     justify-content: center;
+
     gap: 50px;
     flex-wrap: wrap;
 }
@@ -112,11 +218,107 @@ section h2 {
 footer {
     height: 80px;
     background-color: #0b2a20;
+=======
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.card img {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.card i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #764ba2;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Dark project card */
+.projects {
+    background: #111;
+    color: white;
+}
+
+.card.dark {
+    background: #222;
+    color: white;
+}
+
+.card.dark i,
+.card.dark p {
+    color: white;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #764ba2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 160px;
+    }
+}
+
+.contact_link {
+    text-decoration: none;
+    color: inherit;
+
     display: flex;
+    flex-direction: column;
     align-items: center;
+
     justify-content: center;
 }
 
 .footer_content {
     font-size: 14px;
+=======
+    gap: 10px;
+}
+
+/* Allow long email to wrap properly */
+.card p {
+    word-break: break-word;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.contact {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* pushes content to bottom */
+    align-items: center;
+    padding-bottom: 80px;
+
 }
