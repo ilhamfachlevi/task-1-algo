@@ -1,117 +1,122 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: #0f3d2e;
+    color: white;
+}
+
+/* HEADER */
 header {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background: url(header_bg.webp);
-    background-size: cover;
+    background: linear-gradient(135deg, #14532d, #0f3d2e);
     display: flex;
 }
 
 .header_left {
     width: 65%;
-    height: 100%;
-    font-size: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    padding: 0 5vw;
-    box-sizing: border-box;
     text-align: right;
+    padding: 0 5vw;
 }
 
-.header_left p {
-    font-size: 0.5em;
+.header_left h1 {
+    font-size: 4vw;
 }
 
 .bio {
     width: 60%;
+    margin-top: 20px;
 }
 
+.bio .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
 .header_right {
     width: 35%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 10vw;
+    font-size: 6vw;
 }
 
 .header_btn {
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .header_btn:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
-main {
-    width: 100vw;
-    height: auto;
-}
-
+/* SECTION */
 section {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 6vw;
-    box-sizing: border-box;
-    min-height: 50vh;
+    padding: 80px 6vw;
+    text-align: center;
 }
 
-section h1 {
-    font-size: 4em;
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
 }
 
 .section_row {
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-.section_item {
-    height: 10vw;
-    margin: 0 4em 4em 4em;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
 .section_item img {
-    height: 100%;
+    height: 80px;
 }
 
-
+/* PROJECTS */
 .projects {
+    background-color: #14532d;
+}
+
+.projects i {
+    font-size: 80px;
     color: white;
-    background: black;
+    transition: 0.3s;
 }
 
-.github:hover {
-    transform: scale(1.05);
-    cursor: pointer;
+.projects i:hover {
+    transform: scale(1.1);
 }
 
+/* CONTACTS */
+.contact_icons a {
+    font-size: 60px;
+    color: white;
+    transition: 0.3s;
+}
+
+.contact_icons a:hover {
+    transform: scale(1.2);
+    color: #a7f3d0;
+}
+
+/* FOOTER */
 footer {
-    width: 100vw;
-    height: 100px;
-    position: relative;
-    background-image: url(footer_bg.png);
-    background-size: cover;
-    background-position: center;
-}
-
-
-.footer_content {
-    width: 100%;
-    height: 100%;
-    backdrop-filter: brightness(50%);
-    -webkit-backdrop-filter: brightness(50%);
+    height: 80px;
+    background-color: #0b2a20;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+}
+
+.footer_content {
+    font-size: 14px;
 }
